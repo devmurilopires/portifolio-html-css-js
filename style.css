@@ -1,0 +1,69 @@
+
+/* ESRILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ESTLO DO CABEÇALHO */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a img {
+    width: 150px;
+    height: 150px;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+}
+header a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #3C2273;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #6941BF;  
+}
