@@ -38,6 +38,21 @@ body {
     transform: scale(1.05);
 }
 
+h2.titulo {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+}
+h2.titulo span, h3 {
+    color: #6941BF;
+}
+
+.sub-titulo {
+    color: #c7c7c7;
+    font-size: 20px;
+    text-align: center;
+}
+
 /* ESTLO DO CABEÇALHO */
 header {
     padding: 40px 4%;
@@ -76,7 +91,6 @@ header nav ul li {
 
 
 /* TOPO DO SITE */
-
 
 section .topo-do-site {
     padding: 40px 4%;
@@ -152,3 +166,56 @@ section .topo-do-site .flex {
         transform: translateY(0px);
     }
 }
+
+/* ESTILO DAS ESPECIALIDADES */
+section .especialidades {
+    padding: 40px 4%;
+
+}
+section .especialidades .flex {
+    justify-content: space-between; /* Estava 'center', mudamos para 'space-between' */
+    gap: 40px;
+}
+
+.especialidades .frontend-box, .especialidades .backend-box, .especialidades .tools-box {
+    color: #ffffff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Muda de 'center' para alinhar a lista de skills à esquerda */
+    gap: 20px; /* Espaço vertical entre o título e as skills (e entre as próprias skills) */
+    margin: 40px 40px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    flex: 1; /* Faz as 3 caixas terem exatamente a mesma largura na tela */
+}
+
+.especialidades .frontend-box:hover, .especialidades .backend-box:hover, .especialidades .tools-box:hover {
+    box-shadow: 0px 0px 20px #6941bfb0;
+    transform: scale(1.05);
+}
+
+.especialidades .frontend-box .title, .especialidades .backend-box .title, .especialidades .tools-box .title {
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.skils {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centraliza a imagem com o texto na horizontal */
+    gap: 20px; /* Espaço entre a imagem e o nome da skill */
+}
+
+.skils img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Adicione isso no final do seu CSS */
+.titulo-especialidade {
+    display: flex;
+    align-items: center; /* Centraliza o ícone e o texto verticalmente entre si */
+    gap: 15px; /* Espaço entre o ícone e o texto h3 */
+}
+
